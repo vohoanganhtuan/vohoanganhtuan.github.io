@@ -113,13 +113,31 @@ footer {
 
     margin-top: 80px;
 
-    padding: 30px;
+    padding: 50px 20px;
 
     background: #f7f7f7;
 
     text-align: center;
 
     color: #666666;
+
+    border-top: 1px solid #e5e5e5;
+
+}
+
+footer h3 {
+
+    color: #222222;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+footer p {
+
+    margin: 10px 0;
 
 }
 /* ===== PROJECT PHOENIX UI v2 ===== */
