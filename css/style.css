@@ -254,3 +254,36 @@ font-size: 30px;
 }
 
 }
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+a {
+
+    transition: color .25s ease;
+
+}
+
+.button {
+
+    transition: background-color .25s ease,
+                color .25s ease,
+                opacity .25s ease;
+
+}
+
+.button:hover {
+
+    opacity: .92;
+
+}
