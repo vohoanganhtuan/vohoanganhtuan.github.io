@@ -50,27 +50,38 @@ nav {
 
     background: #f7f7f7;
 
-    padding: 15px;
+    padding: 18px 20px;
 
     text-align: center;
+
+    border-top: 1px solid #e5e5e5;
+
+    border-bottom: 1px solid #e5e5e5;
 
 }
 
 nav a {
 
+    display: inline-block;
+
     text-decoration: none;
 
     color: #222222;
 
-    margin: 0 18px;
+    margin: 8px 16px;
+
+    padding: 6px 4px;
 
     font-weight: bold;
 
-}
+    font-size: 15px;
 
+}
 nav a:hover {
 
     color: #0B57D0;
+
+    border-bottom: 2px solid #0B57D0;
 
 }
 
