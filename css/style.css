@@ -70,6 +70,9 @@ table {
 
     --background: #F8FAFC;
     --surface: #FFFFFF;
+    --hero-bg-start: #F8FAFC;
+    --hero-bg-middle: #EEF4FA;
+    --hero-bg-end: #FFFFFF;
 
     --text: #1F2937;
     --text-light: #6B7280;
@@ -311,37 +314,68 @@ nav a:hover::after {
 /* ==========================================================
    6. HERO
 ========================================================== */
+
 .hero {
 
+    /* Position */
     position: relative;
-
     overflow: hidden;
 
+    /* Layout */
+    min-height: 520px;
+
+    /* Box Model */
+    padding: var(--section-padding) 0;
+
+    /* Visual */
     background:
         linear-gradient(
             135deg,
-            #f8fafc 0%,
-            #eef4fa 50%,
-            #ffffff 100%
+            var(--hero-bg-start) 0%,
+            var(--hero-bg-middle) 50%,
+            var(--hero-bg-end) 100%
         );
-
-    padding: var(--section-padding) 0;
 }
+
+.hero .container {
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+
+    /* Box Model */
+    max-width: var(--container-width);
+}
+
 .hero h2 {
-    font-size: clamp(2.2rem, 4vw, var(--fs-hero));
-    line-height: var(--lh-tight);
+
+    /* Box Model */
     max-width: var(--hero-title-width);
     margin-bottom: var(--space-lg);
+
+    /* Typography */
+    font-size: clamp(2.2rem, 4vw, var(--fs-hero));
+    line-height: var(--lh-tight);
+    letter-spacing: -0.02em;
+
+    /* Visual */
     color: var(--primary);
 }
 
 .hero p {
-    max-width: var(--content-width);
-    font-size: var(--fs-lead);
-    color: var(--text-light);
-    margin-bottom: var(--space-lg);
-}
 
+    /* Box Model */
+    max-width: var(--content-width);
+    margin-bottom: var(--space-lg);
+
+    /* Typography */
+    font-size: var(--fs-lead);
+    font-weight: 400;
+
+    /* Visual */
+    color: var(--text-light);
+}
 /* ==========================================================
    7. BUTTONS
 ========================================================== */
