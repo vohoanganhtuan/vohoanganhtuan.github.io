@@ -812,6 +812,8 @@ nav a:hover::after {
 
     align-items: center;
 
+    justify-content: center;
+
     max-width: var(--author-card-width);
 
     padding: var(--author-card-padding);
@@ -824,11 +826,11 @@ nav a:hover::after {
 
     box-shadow: var(--author-card-shadow);
 
+    text-align: center;
+
 }
 
 .author-photo {
-
-    text-align: center;
 
     margin-bottom: var(--space-lg);
 
@@ -852,6 +854,8 @@ nav a:hover::after {
 
 .author-info {
 
+    width: 100%;
+
     text-align: center;
 
 }
@@ -860,11 +864,15 @@ nav a:hover::after {
 
     margin-bottom: var(--space-sm);
 
+    text-align: center;
+
 }
 
 .author-info p {
 
     margin-bottom: var(--space-sm);
+
+    text-align: center;
 
 }
 
