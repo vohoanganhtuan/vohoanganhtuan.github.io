@@ -65,6 +65,23 @@ table {
     --primary-dark: #082A42;
     --secondary: #2E5EAA;
     --accent: #C79A3B;
+    /* ===== Color Aliases (Design System) ===== */
+
+    --color-primary: var(--primary);
+    --color-primary-dark: var(--primary-dark);
+
+    --color-secondary: var(--secondary);
+
+    --color-white: var(--surface);
+
+    --color-background: var(--background);
+
+    --color-text: var(--text);
+    --color-text-light: var(--text-light);
+
+    --color-border: var(--border);
+
+    --color-success: var(--success);
 
     /* ===== Neutral ===== */
 
@@ -153,10 +170,13 @@ table {
 
 --z-modal: 5000;
 
-    /* ===== Animation ===== */
+     /* ===== Animation ===== */
 
-    --transition: all .3s ease;
-}
+    --transition-fast: .2s ease;
+    --transition-normal: .3s ease;
+    --transition-slow: .45s ease;
+
+    --transition: all var(--transition-normal);
 /* ==========================================================
    3. GLOBAL BASE
 ========================================================== */
