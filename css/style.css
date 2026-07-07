@@ -135,6 +135,21 @@ table {
     --shadow-sm: 0 3px 10px rgba(0,0,0,.05);
     --shadow-md: 0 8px 24px rgba(0,0,0,.08);
     --shadow-lg: 0 15px 40px rgba(0,0,0,.12);
+   /* ===== Card ===== */
+
+--card-padding: var(--space-lg);
+
+--card-gap: var(--space-md);
+
+--card-radius: var(--radius-md);
+
+--card-border-color: var(--border);
+
+--card-shadow: var(--shadow-sm);
+
+--card-shadow-hover: var(--shadow-md);
+
+--card-background: var(--surface);
 
 /* ===== Layout ===== */
 
@@ -636,7 +651,45 @@ nav a:hover::after {
    8. CARDS
 ========================================================== */
 
+.card {
 
+    /* Layout */
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--card-gap);
+
+    /* Box Model */
+
+    padding: var(--card-padding);
+
+    border: 1px solid var(--card-border-color);
+
+    border-radius: var(--card-radius);
+
+    /* Visual */
+
+    background: var(--card-background);
+
+    box-shadow: var(--card-shadow);
+
+    /* Animation */
+
+    transition:
+        box-shadow var(--transition-normal),
+        transform var(--transition-normal);
+
+}
+
+.card:hover {
+
+    box-shadow: var(--card-shadow-hover);
+
+    transform: translateY(-4px);
+
+}
 
 /* ==========================================================
    9. AUTHOR
