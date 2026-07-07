@@ -781,13 +781,21 @@ nav a:hover::after {
 
 .author-photo {
 
+    text-align: center;
+
+    margin-bottom: var(--space-xl);
+
+}
+
+.author-photo img {
+
     display: block;
 
     width: 203px;
 
     height: auto;
 
-    margin: 0 auto var(--space-xl);
+    margin: 0 auto;
 
     border-radius: var(--radius-lg);
 
@@ -861,9 +869,8 @@ nav a:hover::after {
     }
 /* ===== Author ===== */
 
-.author-photo {
+.author-photo img {
 
     width: 170px;
 
-}
 }
