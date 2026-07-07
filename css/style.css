@@ -116,8 +116,37 @@ table {
 
     /* ===== Layout ===== */
 
-    --container-width: 1200px;
-    --section-padding: 90px;
+/* ===== Layout ===== */
+
+--container-width: 1200px;
+
+--content-width: 760px;
+
+--section-padding: 90px;
+
+--section-padding-mobile: 60px;
+
+/* ===== Spacing ===== */
+
+--space-xs: 0.5rem;
+
+--space-sm: 1rem;
+
+--space-md: 1.5rem;
+
+--space-lg: 2rem;
+
+--space-xl: 3rem;
+
+--space-2xl: 5rem;
+
+/* ===== Z-index ===== */
+
+--z-header: 100;
+
+--z-nav: 1000;
+
+--z-modal: 5000;
 
     /* ===== Animation ===== */
 
