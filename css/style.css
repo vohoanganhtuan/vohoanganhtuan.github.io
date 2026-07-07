@@ -377,7 +377,7 @@ nav a:hover::after {
     color: var(--text-light);
 }
 /* =========================================================
-   7. BUTTON SYSTEM
+   BUTTON SYSTEM
    ========================================================= */
 
 /* ---------- Base Button ---------- */
@@ -392,6 +392,7 @@ nav a:hover::after {
     gap: var(--space-xs);
 
     /* Box Model */
+    min-height: 48px;
     padding: var(--space-sm) var(--space-lg);
     border: 2px solid transparent;
     border-radius: var(--radius-md);
@@ -399,7 +400,7 @@ nav a:hover::after {
     /* Typography */
     font-size: var(--fs-body);
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.2;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -421,11 +422,17 @@ nav a:hover::after {
 .button-primary {
     background-color: var(--color-primary);
     color: var(--color-white);
+    border-color: var(--color-primary);
 }
 
 .button-primary:hover {
     background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
     transform: translateY(-2px);
+}
+
+.button-primary:active {
+    transform: translateY(0);
 }
 
 .button-primary:focus-visible {
@@ -445,6 +452,10 @@ nav a:hover::after {
     background-color: var(--color-primary);
     color: var(--color-white);
     transform: translateY(-2px);
+}
+
+.button-secondary:active {
+    transform: translateY(0);
 }
 
 .button-secondary:focus-visible {
