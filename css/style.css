@@ -690,7 +690,47 @@ nav a:hover::after {
     transform: translateY(-4px);
 
 }
+/* ---------- Card Header ---------- */
 
+.card-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-sm);
+
+}
+
+/* ---------- Card Body ---------- */
+
+.card-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    flex: 1;
+
+}
+
+/* ---------- Card Footer ---------- */
+
+.card-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-md);
+
+    margin-top: auto;
+
+}
 /* ==========================================================
    9. AUTHOR
 ========================================================== */
