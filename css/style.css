@@ -146,6 +146,12 @@ table {
 
 --hero-title-width: 900px;
 
+--header-padding-y: 3rem;
+
+--header-content-width: 760px;
+
+--header-subtitle-size: 1.1rem;
+
 --section-padding: 90px;
 
 --section-padding-mobile: 60px;
@@ -271,7 +277,7 @@ section {
 header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
-    padding: 3rem 0;
+    padding: var(--header-padding-y) 0;
     text-align: center;
 }
 
