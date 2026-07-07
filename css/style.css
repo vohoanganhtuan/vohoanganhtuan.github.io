@@ -353,7 +353,7 @@ nav a:hover::after {
     min-height: 520px;
 
     /* Box Model */
-    padding: var(--section-padding) 0;
+    padding: var(--hero-padding-y) 0;
 
     /* Visual */
     background:
