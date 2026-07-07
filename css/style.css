@@ -539,105 +539,95 @@ nav a:hover::after {
     pointer-events: none;
 }
 /* ==========================================================
-   RESPONSIVE — TABLET
+   RESPONSIVE
 ========================================================== */
+
+/* ---------- Tablet ---------- */
 
 @media (max-width: 992px) {
 
-    .hero {
-
-        min-height: auto;
-
-        padding: var(--hero-padding-tablet) 0;
-    }
-
-    .hero h2 {
-
-        max-width: 100%;
-    }
-
-    .hero p {
-
-        max-width: 100%;
-    }
-
-}
-
-/* ==========================================================
-   RESPONSIVE — HEADER & NAVIGATION (TABLET)
-========================================================== */
-
-@media (max-width: 992px) {
+    /* ===== Header ===== */
 
     header {
         padding: calc(var(--header-padding-y) * 0.85) 0;
     }
 
+    /* ===== Navigation ===== */
+
     nav .container {
         gap: var(--space-md);
     }
 
-}
-/* ==========================================================
-   RESPONSIVE — MOBILE
-========================================================== */
-header {
-    padding: calc(var(--header-padding-y) * 0.75) 0;
-}
-
-header h1 {
-    margin-bottom: var(--space-sm);
-}
-
-header p {
-    font-size: var(--fs-body);
-}
-nav .container {
-
-    gap: var(--space-sm);
-
-    min-height: auto;
-
-    padding-block: var(--space-sm);
-
-}
-nav a {
-
-    padding: var(--space-xs) 0;
-
-}
-@media (max-width: 768px) {
+    /* ===== Hero ===== */
 
     .hero {
+        min-height: auto;
+        padding: var(--hero-padding-tablet) 0;
+    }
 
+    .hero h2 {
+        max-width: 100%;
+    }
+
+    .hero p {
+        max-width: 100%;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    /* ===== Header ===== */
+
+    header {
+        padding: calc(var(--header-padding-y) * 0.75) 0;
+    }
+
+    header h1 {
+        margin-bottom: var(--space-sm);
+    }
+
+    header p {
+        font-size: var(--fs-body);
+    }
+
+    /* ===== Navigation ===== */
+
+    nav .container {
+        gap: var(--space-sm);
+        min-height: auto;
+        padding-block: var(--space-sm);
+    }
+
+    nav a {
+        padding: var(--space-xs) 0;
+    }
+
+    /* ===== Hero ===== */
+
+    .hero {
         padding: var(--hero-padding-mobile) 0;
     }
 
     .hero h2 {
-
         font-size: clamp(2rem, 8vw, 2.5rem);
-
         margin-bottom: var(--space-md);
     }
 
     .hero p {
-
         font-size: var(--fs-body);
-
         margin-bottom: var(--space-md);
     }
 
     .hero p:last-of-type {
-
         flex-direction: column;
-
         align-items: stretch;
     }
 
     .hero p:last-of-type .button {
-
         width: 100%;
-
         min-width: 0;
     }
 
