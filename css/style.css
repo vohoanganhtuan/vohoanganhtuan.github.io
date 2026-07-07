@@ -1,318 +1,275 @@
-/* =====================================================
-   PROJECT PHOENIX Knowledge Hub
+/* ==========================================================
+   PROJECT PHOENIX
+   style.css
    Author: Vo Hoang Anh Tuan
-   Version: 1.0
-===================================================== */
-
-* {
+   Version: 2.0
+   ========================================================== */
+/* ==========================================================
+   1. RESET
+========================================================== */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #ffffff;
-
-    color: #222222;
-
-    line-height: 1.7;
-
-}
-
-header {
-
-    text-align: center;
-
-    padding: 50px 20px;
-
-}
-
-header h1 {
-
-    font-size: 42px;
-
-    margin-bottom: 15px;
-
-}
-
-header p {
-
-    color: #666666;
-
-    font-size: 18px;
-
-}
-
-nav {
-
-    background: #f7f7f7;
-
-    padding: 18px 20px;
-
-    text-align: center;
-
-    border-top: 1px solid #e5e5e5;
-
-    border-bottom: 1px solid #e5e5e5;
-
-}
-
-nav a {
-
-    display: inline-block;
-
-    text-decoration: none;
-
-    color: #222222;
-
-    margin: 8px 16px;
-
-    padding: 6px 4px;
-
-    font-weight: bold;
-
-    font-size: 15px;
-
-}
-nav a:hover {
-
-    color: #0B57D0;
-
-    border-bottom: 2px solid #0B57D0;
-
-}
-
-main {
-
-    max-width: 900px;
-
-    margin: 50px auto;
-
-    padding: 0 20px;
-
-}
-
-section h2 {
-
-    margin-bottom: 20px;
-
-    font-size: 32px;
-
-}
-
-section {
-
-    margin-bottom: 80px;
-
-}
-
-footer {
-
-    margin-top: 80px;
-
-    padding: 50px 20px;
-
-    background: #f7f7f7;
-
-    text-align: center;
-
-    color: #666666;
-
-    border-top: 1px solid #e5e5e5;
-
-}
-
-footer h3 {
-
-    color: #222222;
-
-    margin-bottom: 15px;
-
-    font-size: 24px;
-
-}
-
-footer p {
-
-    margin: 10px 0;
-
-}
-/* ===== PROJECT PHOENIX UI v2 ===== */
-
-.hero {
-
-text-align: center;
-
-padding: 40px 20px;
-
-}
-
-.hero h2 {
-
-font-size: 40px;
-
-margin-bottom: 20px;
-
-}
-
-.hero p {
-
-max-width: 750px;
-
-margin: 0 auto 20px;
-
-color: #555;
-
-}
-
-.button {
-
-display: inline-block;
-
-padding: 12px 24px;
-
-margin: 10px;
-
-border-radius: 8px;
-
-text-decoration: none;
-
-font-weight: bold;
-
-}
-
-.button-primary {
-
-background: #0B57D0;
-
-color: white;
-
-}
-
-.button-secondary {
-
-border: 2px solid #0B57D0;
-
-color: #0B57D0;
-
-}
-
-.section-title {
-
-text-align: center;
-
-margin-bottom: 30px;
-
-}
-
-.card-grid {
-
-display: grid;
-
-grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
-gap: 25px;
-
-}
-
-.card {
-
-border: 1px solid #e5e5e5;
-
-border-radius: 12px;
-
-padding: 24px;
-
-background: white;
-
-}
-
-.card h3 {
-
-margin: 15px 0;
-
-}
-
-.card p {
-
-color: #555;
-
-}
-
-.profiles {
-
-display: grid;
-
-grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-
-gap: 20px;
-
-}
-
-.profile-box {
-
-border: 1px solid #e5e5e5;
-
-border-radius: 12px;
-
-padding: 20px;
-
-text-align: center;
-
-font-weight: bold;
-
-}
-
-@media (max-width: 768px) {
-
-nav a {
-
-display: block;
-
-margin: 10px 0;
-
-}
-
-.hero h2 {
-
-font-size: 30px;
-
-}
-
-}
 html {
-
+    font-size: 16px;
     scroll-behavior: smooth;
-
 }
 
-img {
+body {
+    min-height: 100vh;
+}
 
+img,
+picture,
+svg,
+video {
+    display: block;
     max-width: 100%;
-
     height: auto;
+}
 
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
 
 a {
-
-    transition: color .25s ease;
-
+    color: inherit;
+    text-decoration: none;
 }
 
-.button {
-
-    transition: background-color .25s ease,
-                color .25s ease,
-                opacity .25s ease;
-
+ul,
+ol {
+    list-style: none;
 }
 
-.button:hover {
-
-    opacity: .92;
-
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+/* ==========================================================
+   2. DESIGN TOKENS
+========================================================== */
+:root {
+
+    /* ===== Brand Colors ===== */
+
+    --primary: #0F3D5E;
+    --primary-dark: #082A42;
+    --secondary: #2E5EAA;
+    --accent: #C79A3B;
+
+    /* ===== Neutral ===== */
+
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+
+    --text: #1F2937;
+    --text-light: #6B7280;
+
+    --border: #E5E7EB;
+
+    /* ===== Status ===== */
+
+    --success: #2E7D32;
+
+    /* ===== Typography ===== */
+
+    --font-heading: "Merriweather", serif;
+    --font-body: "Inter", sans-serif;
+
+    /* ===== Font Size ===== */
+
+    --fs-hero: 3rem;
+
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+
+    --fs-body: 1rem;
+    --fs-small: .9rem;
+
+    /* ===== Line Height ===== */
+
+    --lh-heading: 1.3;
+    --lh-body: 1.8;
+
+    /* ===== Radius ===== */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+
+    /* ===== Shadow ===== */
+
+    --shadow-sm: 0 3px 10px rgba(0,0,0,.05);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.08);
+    --shadow-lg: 0 15px 40px rgba(0,0,0,.12);
+
+    /* ===== Layout ===== */
+
+    --container-width: 1200px;
+    --section-padding: 90px;
+
+    /* ===== Animation ===== */
+
+    --transition: all .3s ease;
+}
+/* ==========================================================
+   3. GLOBAL BASE
+========================================================== */
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--text);
+    background: var(--background);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    line-height: var(--lh-heading);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+a {
+    transition: var(--transition);
+}
+
+.container {
+    width: min(100% - 48px, var(--container-width));
+    margin-inline: auto;
+}
+
+section {
+    padding: var(--section-padding) 0;
+}
+
+::selection {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+/* ==========================================================
+   4. HEADER
+========================================================== */
+
+
+
+/* ==========================================================
+   5. NAVIGATION
+========================================================== */
+
+
+
+/* ==========================================================
+   6. HERO
+========================================================== */
+
+
+
+/* ==========================================================
+   7. BUTTONS
+========================================================== */
+
+
+
+/* ==========================================================
+   8. CARDS
+========================================================== */
+
+
+
+/* ==========================================================
+   9. AUTHOR
+========================================================== */
+
+
+
+/* ==========================================================
+   10. ABOUT
+========================================================== */
+
+
+
+/* ==========================================================
+   11. WHY PROJECT PHOENIX
+========================================================== */
+
+
+
+/* ==========================================================
+   12. RESEARCH INTERESTS
+========================================================== */
+
+
+
+/* ==========================================================
+   13. PUBLICATIONS
+========================================================== */
+
+
+
+/* ==========================================================
+   14. PROFESSIONAL PROFILES
+========================================================== */
+
+
+
+/* ==========================================================
+   15. FOOTER
+========================================================== */
+
+
+
+/* ==========================================================
+   16. RESPONSIVE
+========================================================== */
+
+
+
+/* ==========================================================
+   17. ANIMATION
+========================================================== */
