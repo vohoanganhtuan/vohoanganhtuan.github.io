@@ -140,6 +140,8 @@ table {
 
 --container-width: 1200px;
 
+--container-padding-inline: 24px;
+
 --content-width: 760px;
 
 --hero-title-width: 900px;
@@ -241,7 +243,11 @@ a {
 }
 
 .container {
-    width: min(100% - 48px, var(--container-width));
+    width: min(
+        100% - calc(var(--container-padding-inline) * 2),
+        var(--container-width)
+    );
+
     margin-inline: auto;
 }
 
