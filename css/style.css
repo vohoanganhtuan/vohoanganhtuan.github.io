@@ -147,6 +147,13 @@ table {
 --section-padding: 90px;
 
 --section-padding-mobile: 60px;
+   /* ===== Hero Layout ===== */
+
+--hero-padding-y: clamp(4rem, 8vw, 7rem);
+
+--hero-gap: var(--space-lg);
+
+--hero-content-width: var(--hero-title-width);
 
 /* ===== Spacing ===== */
 
@@ -371,7 +378,7 @@ nav a:hover::after {
 .hero h2 {
 
     /* Box Model */
-    max-width: var(--hero-title-width);
+   max-width: var(--hero-content-width);
     margin-bottom: var(--space-lg);
 
     /* Typography */
