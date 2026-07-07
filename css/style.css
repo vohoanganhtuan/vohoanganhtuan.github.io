@@ -287,11 +287,11 @@ header h1 {
     color: var(--primary);
 }
 
-header p {
-    max-width: 760px;
+hheader p {
+    max-width: var(--content-width);
     margin: 0 auto;
     color: var(--text-light);
-    font-size: 1.1rem;
+    font-size: var(--header-subtitle-size);
 }
 
 /* ==========================================================
