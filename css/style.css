@@ -186,6 +186,13 @@ table {
 --hero-gap: var(--space-lg);
 
 --hero-content-width: var(--hero-title-width);
+   /* ===== Author Card ===== */
+
+--author-card-width: 760px;
+
+--author-card-padding: var(--space-2xl);
+
+--author-card-shadow: var(--shadow-sm);
 
 /* ===== Spacing ===== */
 
@@ -651,15 +658,33 @@ nav a:hover::after {
         min-width: 0;
     }
 
+    /* ===== Author ===== */
+
+    .author-intro .container {
+
+        padding: var(--space-xl);
+
+    }
+
+    .author-photo img {
+
+        width: 170px;
+
+    }
+
     /* ===== Grid ===== */
 
     .grid {
+
         gap: var(--grid-gap-mobile);
+
     }
 
     .grid-2,
     .grid-3 {
+
         grid-template-columns: 1fr;
+
     }
 
 }
@@ -779,11 +804,33 @@ nav a:hover::after {
    AUTHOR PROFILE
 ========================================================== */
 
+.author-intro .container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    max-width: var(--author-card-width);
+
+    padding: var(--author-card-padding);
+
+    margin: 0 auto;
+
+    background: var(--surface);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--author-card-shadow);
+
+}
+
 .author-photo {
 
     text-align: center;
 
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
 
 }
 
@@ -800,6 +847,24 @@ nav a:hover::after {
     border-radius: var(--radius-lg);
 
     box-shadow: var(--shadow-md);
+
+}
+
+.author-info {
+
+    text-align: center;
+
+}
+
+.author-info h2 {
+
+    margin-bottom: var(--space-sm);
+
+}
+
+.author-info p {
+
+    margin-bottom: var(--space-sm);
 
 }
 
