@@ -547,7 +547,46 @@ nav a:hover::after {
 
 }
 
+/* ==========================================================
+   RESPONSIVE — MOBILE
+========================================================== */
 
+@media (max-width: 768px) {
+
+    .hero {
+
+        padding: clamp(3rem, 8vw, 4rem) 0;
+    }
+
+    .hero h2 {
+
+        font-size: clamp(2rem, 8vw, 2.5rem);
+
+        margin-bottom: var(--space-md);
+    }
+
+    .hero p {
+
+        font-size: var(--fs-body);
+
+        margin-bottom: var(--space-md);
+    }
+
+    .hero p:last-of-type {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero p:last-of-type .button {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}
 /* ==========================================================
    8. CARDS
 ========================================================== */
