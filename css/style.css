@@ -775,7 +775,25 @@ nav a:hover::after {
    10. AUTHOR
 ========================================================== */
 
+/* ==========================================================
+   AUTHOR PROFILE
+========================================================== */
 
+.author-photo {
+
+    display: block;
+
+    width: 203px;
+
+    height: auto;
+
+    margin: 0 auto var(--space-xl);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+}
 
 /* ==========================================================
    11. ABOUT
@@ -841,5 +859,11 @@ nav a:hover::after {
         width: 100%;
         min-width: 0;
     }
+/* ===== Author ===== */
 
+.author-photo {
+
+    width: 170px;
+
+}
 }
