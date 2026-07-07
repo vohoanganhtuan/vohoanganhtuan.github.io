@@ -325,7 +325,29 @@ nav a:hover::after {
 
     padding: var(--section-padding) 0;
 }
+.hero h2 {
 
+    font-size: clamp(2.2rem, 4vw, var(--fs-hero));
+
+    line-height: 1.2;
+
+    max-width: 900px;
+
+    margin-bottom: var(--space-lg);
+
+    color: var(--primary);
+}
+
+.hero p {
+
+    max-width: var(--content-width);
+
+    font-size: 1.125rem;
+
+    color: var(--text-light);
+
+    margin-bottom: var(--space-lg);
+}
 
 /* ==========================================================
    7. BUTTONS
