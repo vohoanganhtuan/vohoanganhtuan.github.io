@@ -147,9 +147,13 @@ table {
 --section-padding: 90px;
 
 --section-padding-mobile: 60px;
-   /* ===== Hero Layout ===== */
+  /* ===== Hero Layout ===== */
 
 --hero-padding-y: clamp(4rem, 8vw, 7rem);
+
+--hero-padding-tablet: clamp(3.5rem, 6vw, 5rem);
+
+--hero-padding-mobile: clamp(3rem, 8vw, 4rem);
 
 --hero-gap: var(--space-lg);
 
@@ -532,7 +536,7 @@ nav a:hover::after {
 
         min-height: auto;
 
-        padding: clamp(3.5rem, 6vw, 5rem) 0;
+        padding: var(--hero-padding-tablet) 0;
     }
 
     .hero h2 {
@@ -555,7 +559,7 @@ nav a:hover::after {
 
     .hero {
 
-        padding: clamp(3rem, 8vw, 4rem) 0;
+        padding: var(--hero-padding-mobile) 0;
     }
 
     .hero h2 {
