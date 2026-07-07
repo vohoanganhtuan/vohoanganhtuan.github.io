@@ -309,7 +309,22 @@ nav a:hover::after {
 /* ==========================================================
    6. HERO
 ========================================================== */
+.hero {
 
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4fa 50%,
+            #ffffff 100%
+        );
+
+    padding: var(--section-padding) 0;
+}
 
 
 /* ==========================================================
