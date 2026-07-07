@@ -287,7 +287,7 @@ header h1 {
     color: var(--primary);
 }
 
-hheader p {
+header p {
     max-width: var(--content-width);
     margin: 0 auto;
     color: var(--text-light);
