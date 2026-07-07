@@ -148,13 +148,13 @@ table {
 
 --header-padding-y: 3rem;
 
---header-content-width: 760px;
-
 --header-subtitle-size: 1.1rem;
 
---section-padding: 90px;
+--nav-height: 70px;
 
---section-padding-mobile: 60px;
+--nav-gap: var(--space-lg);
+
+--section-padding: 90px;
   /* ===== Hero Layout ===== */
 
 --hero-padding-y: clamp(4rem, 8vw, 7rem);
@@ -301,7 +301,7 @@ header p {
 nav {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: var(--z-nav);
 
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -313,9 +313,9 @@ nav .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: var(--nav-gap);
 
-    min-height: 70px;
+    min-height: var(--nav-height);
 
     flex-wrap: wrap;
 }
