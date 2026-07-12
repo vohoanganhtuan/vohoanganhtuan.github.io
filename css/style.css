@@ -841,6 +841,47 @@ nav a:hover::after {
 ========================================================== */
 
 /* ==========================================================
+   14. PROFESSIONAL PROFILES
+========================================================== */
+
+.profile-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: var(--space-sm);
+
+    margin-top: var(--space-md);
+
+}
+
+.profile-list li {
+
+    padding: .6rem 1rem;
+
+    background: var(--color-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+}
+
+.profile-list li:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+/* ==========================================================
    15. ABOUT PAGE
 ========================================================== */
 
@@ -903,47 +944,6 @@ nav a:hover::after {
 
 .breadcrumb span {
     color: var(--text-light);
-}
-
-/* ==========================================================
-   14. PROFESSIONAL PROFILES
-========================================================== */
-
-.profile-list {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(150px, 1fr));
-
-    gap: var(--space-sm);
-
-    margin-top: var(--space-md);
-
-}
-
-.profile-list li {
-
-    padding: .6rem 1rem;
-
-    background: var(--color-white);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius-md);
-
-    box-shadow: var(--shadow-sm);
-
-    transition: var(--transition);
-
-}
-
-.profile-list li:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow: var(--shadow-md);
-
 }
 
 /* ==========================================================
