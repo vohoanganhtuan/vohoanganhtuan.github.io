@@ -992,7 +992,7 @@ nav a:hover::after {
 /* ==========================================================
    17. FOOTER
 ========================================================== */
-footer {
+.site-footer {
 
     background: var(--footer-bg);
 
@@ -1005,11 +1005,11 @@ footer {
 }
 
 
-footer p {
+.site-footer p {
 
     margin-bottom: 0;
 
-   color: var(--footer-text-color);
+    color: var(--footer-text-color);
 
     font-size: var(--fs-small);
 
