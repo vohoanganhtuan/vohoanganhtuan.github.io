@@ -950,51 +950,8 @@ nav a:hover::after {
    15. PROFESSIONAL PROFILES
 ========================================================== */
 
-
-
 /* ==========================================================
-   16. FOOTER
-========================================================== */
-
-
-
-/* ==========================================================
-   17. RESPONSIVE
-========================================================== */
-
-
-
-/* ==========================================================
-   18. ANIMATION
-========================================================== */
-   /* =========================================================
-   RESPONSIVE HERO
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .hero p:last-of-type {
-
-        /* Layout */
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero p:last-of-type .button {
-
-        /* Box Model */
-        width: 100%;
-        min-width: 0;
-    }
-/* ===== Author ===== */
-
-.author-photo img {
-
-    width: calc(var(--author-photo-size) * .85);
-
-}
-/* ==========================================================
-   ABOUT PAGE
+   16. ABOUT PAGE
 ========================================================== */
 
 .about-hero {
@@ -1003,7 +960,7 @@ nav a:hover::after {
 
 .about-grid {
     display: grid;
-  grid-template-columns: minmax(260px,320px) 1fr;
+    grid-template-columns: minmax(260px, 320px) 1fr;
     gap: var(--space-2xl);
     align-items: center;
 }
@@ -1015,14 +972,15 @@ nav a:hover::after {
 .about-photo img {
     width: 100%;
     max-width: 320px;
-
-    border-radius: var(--radius-lg);
+    margin-inline: auto;
 
     border: 1px solid var(--border);
-
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+}
 
-    margin-inline: auto;
+.about-content {
+    max-width: 760px;
 }
 
 .about-content h2 {
@@ -1032,19 +990,13 @@ nav a:hover::after {
 .about-content p {
     margin-bottom: var(--space-md);
 }
-
-.about-content {
-    max-width: 760px;
-}
-   /* ==========================================================
-   BREADCRUMB
+/* ==========================================================
+   17. BREADCRUMB
 ========================================================== */
 
 .breadcrumb {
     padding: var(--space-md) 0;
-
     font-size: var(--fs-small);
-
     background: transparent;
 }
 
@@ -1062,8 +1014,9 @@ nav a:hover::after {
 .breadcrumb span {
     color: var(--text-light);
 }
-   /* ==========================================================
-   PROFILE LIST
+
+/* ==========================================================
+   18. PROFESSIONAL PROFILES
 ========================================================== */
 
 .profile-list {
@@ -1071,7 +1024,7 @@ nav a:hover::after {
     display: grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(150px,1fr));
+        repeat(auto-fit, minmax(150px, 1fr));
 
     gap: var(--space-sm);
 
@@ -1080,47 +1033,126 @@ nav a:hover::after {
 }
 
 .profile-list li {
+
     padding: .6rem 1rem;
+
+    background: var(--surface);
 
     border: 1px solid var(--border);
 
     border-radius: var(--radius-md);
 
-    background: var(--surface);
-
     box-shadow: var(--shadow-sm);
 
     transition: var(--transition);
+
 }
 
 .profile-list li:hover {
+
     transform: translateY(-2px);
 
     box-shadow: var(--shadow-md);
+
 }
-   /* ==========================================================
-   ABOUT RESPONSIVE
+
+/* ==========================================================
+   19. FOOTER
+========================================================== */
+/* ==========================================================
+   20. RESPONSIVE
 ========================================================== */
 
-@media (max-width:768px) {
+/* ==========================================================
+   20.1 TABLET
+========================================================== */
 
-    .about-grid {
+@media (max-width:992px){
 
-        grid-template-columns: 1fr;
+}
 
-        text-align: center;
+/* ==========================================================
+   20.2 MOBILE
+========================================================== */
 
-        gap: var(--space-xl);
-    }
+@media (max-width:768px){
 
-    .about-content {
+    .author-photo img{
 
-        max-width: 100%;
-    }
+        width:calc(var(--author-photo-size) * .85);
 
-    .profile-list {
-
-        justify-content: center;
     }
 
 }
+
+/* ==========================================================
+   20.3 ABOUT RESPONSIVE
+========================================================== */
+
+@media (max-width:768px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:var(--space-xl);
+
+    }
+
+    .about-content{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   20.4 PROFILE RESPONSIVE
+========================================================== */
+
+@media (max-width:768px){
+
+    .profile-list{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================================
+   20.5 HERO BUTTONS
+========================================================== */
+
+@media (max-width:768px){
+
+    .hero p:last-of-type{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .hero p:last-of-type .button{
+
+        width:100%;
+
+        min-width:0;
+
+    }
+
+}
+
+/* ==========================================================
+   21. ANIMATION
+========================================================== */
+
+
+
+
+
+
