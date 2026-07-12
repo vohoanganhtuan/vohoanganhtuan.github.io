@@ -523,84 +523,55 @@ nav a:hover::after {
 ========================================================== */
 
 .card {
-
     /* Layout */
-
     display: flex;
-
     flex-direction: column;
-
     gap: var(--card-gap);
 
     /* Box Model */
-
     padding: var(--card-padding);
-
     border: 1px solid var(--card-border-color);
-
     border-radius: var(--card-radius);
 
     /* Visual */
-
     background: var(--card-background);
-
     box-shadow: var(--card-shadow);
 
     /* Animation */
-
     transition: var(--card-transition);
-
 }
 
 .card:hover {
-
     box-shadow: var(--card-shadow-hover);
-
     transform: translateY(var(--card-hover-offset));
-
 }
+
 /* ---------- Card Header ---------- */
 
 .card-header {
-
     display: flex;
-
     flex-direction: column;
-
     gap: var(--space-sm);
-
 }
 
 /* ---------- Card Body ---------- */
 
 .card-body {
-
     display: flex;
-
     flex-direction: column;
-
     gap: var(--space-md);
-
     flex: 1;
-
 }
 
 /* ---------- Card Footer ---------- */
 
 .card-footer {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: var(--space-md);
-
     margin-top: auto;
-
 }
-
 /* ==========================================================
    10. ABOUT
 ========================================================== */
