@@ -390,7 +390,6 @@ nav a:hover::after {
 ========================================================== */
 
 .hero {
-
     /* Position */
     position: relative;
     overflow: hidden;
@@ -410,51 +409,11 @@ nav a:hover::after {
             var(--hero-bg-end) 100%
         );
 }
-
-.hero .container {
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:var(--space-md);
-
-}
-
-.hero h2 {
-
-    /* Box Model */
-   max-width: var(--hero-content-width);
-    margin-bottom: var(--space-lg);
-
-    /* Typography */
-    font-size: clamp(2.2rem, 4vw, var(--fs-hero));
-    line-height: var(--lh-tight);
-    letter-spacing: -0.02em;
-
-    /* Visual */
-    color: var(--primary);
-}
-
-.hero p {
-
-    /* Box Model */
-    max-width: var(--content-width);
-    margin-bottom: var(--space-lg);
-
-    /* Typography */
-    font-size: var(--fs-lead);
-    font-weight: 400;
-
-    /* Visual */
-    color: var(--text-light);
-}
-   /* =========================================================
+/* =========================================================
    HERO BUTTON GROUP
-   ========================================================= */
+========================================================= */
 
 .hero p:last-of-type {
-
     /* Layout */
     display: flex;
     flex-wrap: wrap;
@@ -465,7 +424,6 @@ nav a:hover::after {
 }
 
 .hero p:last-of-type .button {
-
     /* Layout */
     justify-content: center;
 
