@@ -437,8 +437,6 @@ nav a:hover::after {
 /* ---------- Base Button ---------- */
 
 .button {
-    /* Position */
-
     /* Layout */
     display: inline-flex;
     align-items: center;
