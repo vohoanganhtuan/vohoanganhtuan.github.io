@@ -86,15 +86,22 @@ table {
     /* ===== Neutral ===== */
 
     --background: #F8FAFC;
-    --surface: #FFFFFF;
-    --hero-bg-start: #F8FAFC;
+--surface: #FFFFFF;
+
+--surface-secondary: #F1F5F9;
+
+--hero-bg-start: #F8FAFC;
     --hero-bg-middle: #EEF4FA;
     --hero-bg-end: #FFFFFF;
 
     --text: #1F2937;
     --text-light: #6B7280;
 
-    --border: #E5E7EB;
+  --border: #E5E7EB;
+
+--border-light: #EEF2F7;
+
+--border-dark: #CBD5E1;
 
     /* ===== Status ===== */
 
@@ -164,6 +171,12 @@ table {
 
 --content-width: 760px;
 
+--content-narrow: 680px;
+
+--content-wide: 900px;
+
+--reading-width: 760px;
+
 --hero-title-width: 900px;
 
 --header-padding-y: 3rem;
@@ -174,7 +187,7 @@ table {
 
 --nav-gap: var(--space-lg);
 
---section-padding: 90px;
+--section-padding: clamp(60px,8vw,90px);
   /* ===== Hero Layout ===== */
 
 --hero-padding-y: clamp(4rem, 8vw, 7rem);
@@ -957,7 +970,7 @@ nav a:hover::after {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
+  grid-template-columns: minmax(260px,320px) 1fr;
     gap: var(--space-2xl);
     align-items: center;
 }
@@ -1021,13 +1034,16 @@ nav a:hover::after {
 ========================================================== */
 
 .profile-list {
-    display: flex;
 
-    flex-wrap: wrap;
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(150px,1fr));
 
     gap: var(--space-sm);
 
     margin-top: var(--space-md);
+
 }
 
 .profile-list li {
