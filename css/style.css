@@ -65,19 +65,6 @@ table {
     --primary-dark: #082A42;
     --secondary: #2E5EAA;
     --accent: #C79A3B;
-    /* ===== Color Aliases (Design System) ===== */
-
-    --color-primary: var(--primary);
-    --color-primary-dark: var(--primary-dark);
-
-    --color-secondary: var(--secondary);
-
-    --color-text: var(--text);
-    --color-text-light: var(--text-light);
-
-    --color-border: var(--border);
-
-    --color-success: var(--success);
 
     /* ===== Neutral ===== */
 
@@ -106,9 +93,7 @@ table {
 --color-border: var(--border);
 
 --color-success: var(--success);
-
---surface-secondary: #F1F5F9;
-
+   
 --hero-bg-start: #F8FAFC;
     --hero-bg-middle: #EEF4FA;
     --hero-bg-end: #FFFFFF;
@@ -268,7 +253,12 @@ table {
     --transition-fast: .2s ease;
     --transition-normal: .3s ease;
     --transition-slow: .45s ease;
-
+     --transition-button:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-fast);
     --transition: all var(--transition-normal);
    }   /* <-- THÊM DÒNG NÀY */
 /* ==========================================================
@@ -345,7 +335,31 @@ section {
     outline-offset: 3px;
 }
 /* ==========================================================
-   4. HEADER
+ 4. LAYOUT
+========================================================== */
+
+.grid {
+
+    display: grid;
+
+    gap: var(--grid-gap);
+
+}
+
+.grid-2 {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.grid-3 {
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+}
+
+/* ==========================================================
+   5. HEADER
 ========================================================== */
 
 header {
@@ -369,7 +383,7 @@ header p {
 }
 
 /* ==========================================================
-   5. NAVIGATION
+   6. NAVIGATION
 ========================================================== */
 
 nav {
@@ -430,7 +444,7 @@ nav a:hover::after {
 }
 
 /* ==========================================================
-   6. HERO
+   7. HERO
 ========================================================== */
 
 .hero {
@@ -611,129 +625,7 @@ nav a:hover::after {
     cursor: not-allowed;
     pointer-events: none;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
 
-/* ---------- Tablet ---------- */
-
-@media (max-width: 992px) {
-
-    /* ===== Header ===== */
-
-    header {
-        padding: calc(var(--header-padding-y) * 0.85) 0;
-    }
-
-    /* ===== Navigation ===== */
-
-    nav .container {
-        gap: var(--space-md);
-    }
-
-    /* ===== Hero ===== */
-
-    .hero {
-        min-height: auto;
-        padding: var(--hero-padding-tablet) 0;
-    }
-
-    .hero h2 {
-        max-width: 100%;
-    }
-
-    .hero p {
-        max-width: 100%;
-    }
-
-}
-
-/* ---------- Mobile ---------- */
-
-@media (max-width: 768px) {
-
-    /* ===== Header ===== */
-
-    header {
-        padding: calc(var(--header-padding-y) * 0.75) 0;
-    }
-
-    header h1 {
-        margin-bottom: var(--space-sm);
-    }
-
-    header p {
-        font-size: var(--fs-body);
-    }
-
-    /* ===== Navigation ===== */
-
-    nav .container {
-        gap: var(--space-sm);
-        min-height: auto;
-        padding-block: var(--space-sm);
-    }
-
-    nav a {
-        padding: var(--space-xs) 0;
-    }
-
-    /* ===== Hero ===== */
-
-    .hero {
-        padding: var(--hero-padding-mobile) 0;
-    }
-
-    .hero h2 {
-        font-size: clamp(2rem, 8vw, 2.5rem);
-        margin-bottom: var(--space-md);
-    }
-
-    .hero p {
-        font-size: var(--fs-body);
-        margin-bottom: var(--space-md);
-    }
-
-    .hero p:last-of-type {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero p:last-of-type .button {
-        width: 100%;
-        min-width: 0;
-    }
-
-    /* ===== Author ===== */
-
-    .author-intro .container {
-
-        padding: var(--space-xl);
-
-    }
-
-  .author-photo img {
-
-    width: calc(var(--author-photo-size) * .85);
-
-}
-
-    /* ===== Grid ===== */
-
-    .grid {
-
-        gap: var(--grid-gap-mobile);
-
-    }
-
-    .grid-2,
-    .grid-3 {
-
-        grid-template-columns: 1fr;
-
-    }
-
-}
 /* ==========================================================
    8. CARDS
 ========================================================== */
@@ -818,29 +710,6 @@ nav a:hover::after {
     margin-top: auto;
 
 }
-/* ==========================================================
- 4. LAYOUT
-========================================================== */
-
-.grid {
-
-    display: grid;
-
-    gap: var(--grid-gap);
-
-}
-
-.grid-2 {
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-}
-
-.grid-3 {
-
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-}
 
 /* ==========================================================
    10. ABOUT
@@ -923,35 +792,23 @@ nav a:hover::after {
 }
 
 /* ==========================================================
-   11. ABOUT
+  11. WHY PROJECT PHOENIX
 ========================================================== */
 
 
 
 /* ==========================================================
-   12. WHY PROJECT PHOENIX
-========================================================== */
-
-
-
-/* ==========================================================
-   13. RESEARCH INTERESTS
-========================================================== */
-
-
-
-/* ==========================================================
-   14. PUBLICATIONS
-========================================================== */
-
-
-
-/* ==========================================================
-   15. PROFESSIONAL PROFILES
+   12. RESEARCH INTERESTS
 ========================================================== */
 
 /* ==========================================================
-   16. ABOUT PAGE
+   13. PUBLICATIONS
+========================================================== */
+/* ==========================================================
+   14 PROFESSIONAL PROFILES
+========================================================== */
+/* ==========================================================
+   15 ABOUT PAGE
 ========================================================== */
 
 .about-hero {
@@ -1016,7 +873,7 @@ nav a:hover::after {
 }
 
 /* ==========================================================
-   18. PROFESSIONAL PROFILES
+   14. PROFESSIONAL PROFILES
 ========================================================== */
 
 .profile-list {
@@ -1060,33 +917,20 @@ nav a:hover::after {
    19. FOOTER
 ========================================================== */
 /* ==========================================================
-   20. RESPONSIVE
+   18. RESPONSIVE
 ========================================================== */
 
 /* ==========================================================
-   20.1 TABLET
+   18.1 TABLET
 ========================================================== */
 
 @media (max-width:992px){
 
 }
 
-/* ==========================================================
-   20.2 MOBILE
-========================================================== */
-
-@media (max-width:768px){
-
-    .author-photo img{
-
-        width:calc(var(--author-photo-size) * .85);
-
-    }
-
-}
 
 /* ==========================================================
-   20.3 ABOUT RESPONSIVE
+   18.3 ABOUT RESPONSIVE
 ========================================================== */
 
 @media (max-width:768px){
@@ -1110,7 +954,7 @@ nav a:hover::after {
 }
 
 /* ==========================================================
-   20.4 PROFILE RESPONSIVE
+   18.4 PROFILE RESPONSIVE
 ========================================================== */
 
 @media (max-width:768px){
@@ -1123,29 +967,6 @@ nav a:hover::after {
 
 }
 
-/* ==========================================================
-   20.5 HERO BUTTONS
-========================================================== */
-
-@media (max-width:768px){
-
-    .hero p:last-of-type{
-
-        flex-direction:column;
-
-        align-items:stretch;
-
-    }
-
-    .hero p:last-of-type .button{
-
-        width:100%;
-
-        min-width:0;
-
-    }
-
-}
 
 /* ==========================================================
    21. ANIMATION
