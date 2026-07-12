@@ -272,7 +272,11 @@ table {
     border-color var(--transition-normal),
     box-shadow var(--transition-normal),
     transform var(--transition-fast);
-   }  /* End :root */
+   } 
+/* ===== Motion ===== */
+
+--motion-reduced: 0ms; 
+/* End :root */
 /* ==========================================================
    3. GLOBAL BASE
 ========================================================== */
@@ -989,7 +993,23 @@ nav a:hover::after {
 /* ==========================================================
    21. ANIMATION
 ========================================================== */
+@media (prefers-reduced-motion: reduce) {
 
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: var(--motion-reduced) !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: var(--motion-reduced) !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+}
 
 
 
