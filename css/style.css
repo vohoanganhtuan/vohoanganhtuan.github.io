@@ -72,10 +72,6 @@ table {
 
     --color-secondary: var(--secondary);
 
-    --color-white: var(--surface);
-
-    --color-background: var(--background);
-
     --color-text: var(--text);
     --color-text-light: var(--text-light);
 
@@ -85,8 +81,31 @@ table {
 
     /* ===== Neutral ===== */
 
-    --background: #F8FAFC;
+--background: #F8FAFC;
+
 --surface: #FFFFFF;
+
+--surface-secondary: #F1F5F9;
+
+/* ===== Color Aliases (Design System) ===== */
+
+--color-primary: var(--primary);
+
+--color-primary-dark: var(--primary-dark);
+
+--color-secondary: var(--secondary);
+
+--color-white: var(--surface);
+
+--color-background: var(--background);
+
+--color-text: var(--text);
+
+--color-text-light: var(--text-light);
+
+--color-border: var(--border);
+
+--color-success: var(--success);
 
 --surface-secondary: #F1F5F9;
 
@@ -144,7 +163,11 @@ table {
     --shadow-lg: 0 15px 40px rgba(0,0,0,.12);
    /* ===== Card ===== */
 
+--card-padding-sm: var(--space-md);
+
 --card-padding: var(--space-lg);
+
+--card-padding-lg: var(--space-xl);
 
 --card-gap: var(--space-md);
 
@@ -187,7 +210,18 @@ table {
 
 --nav-gap: var(--space-lg);
 
---section-padding: clamp(60px,8vw,90px);
+--section-padding-sm: 50px;
+
+--section-padding-md: 70px;
+
+--section-padding-lg: 90px;
+
+--section-padding:
+    clamp(
+        var(--section-padding-sm),
+        8vw,
+        var(--section-padding-lg)
+    );
   /* ===== Hero Layout ===== */
 
 --hero-padding-y: clamp(4rem, 8vw, 7rem);
@@ -200,7 +234,7 @@ table {
 
 --hero-content-width: var(--hero-title-width);
    /* ===== Author Card ===== */
-
+--author-photo-size: 200px;
 --author-card-width: 760px;
 
 --author-card-padding: var(--space-2xl);
@@ -423,13 +457,12 @@ nav a:hover::after {
 
 .hero .container {
 
-    /* Layout */
-    display: flex;
-    flex-direction: column;
-   gap: var(--space-md);
+    display:flex;
 
-    /* Box Model */
-    max-width: var(--container-width);
+    flex-direction:column;
+
+    gap:var(--space-md);
+
 }
 
 .hero h2 {
@@ -679,11 +712,11 @@ nav a:hover::after {
 
     }
 
-    .author-photo img {
+  .author-photo img {
 
-        width: 170px;
+    width: calc(var(--author-photo-size) * .85);
 
-    }
+}
 
     /* ===== Grid ===== */
 
@@ -853,7 +886,7 @@ nav a:hover::after {
 
     display: block;
 
-    width: 203px;
+    width: var(--author-photo-size);
 
     height: auto;
 
@@ -957,7 +990,7 @@ nav a:hover::after {
 
 .author-photo img {
 
-    width: 170px;
+    width: calc(var(--author-photo-size) * .85);
 
 }
 /* ==========================================================
