@@ -247,12 +247,11 @@ table {
 --z-nav: 1000;
 
 --z-modal: 5000;
-
-     /* ===== Animation ===== */
 /* ===== Focus Ring ===== */
 
 --focus-ring:
     0 0 0 4px rgba(0, 92, 184, .20);
+     /* ===== Animation ===== */
 --transition-fast: .2s ease;
 --transition-normal: .3s ease;
 --transition-slow: .45s ease;
@@ -266,7 +265,7 @@ table {
     border-color var(--transition-normal),
     box-shadow var(--transition-normal),
     transform var(--transition-fast);
-   }   /* <-- THÊM DÒNG NÀY */
+   }  /* End :root */
 /* ==========================================================
    3. GLOBAL BASE
 ========================================================== */
