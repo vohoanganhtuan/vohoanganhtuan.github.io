@@ -677,7 +677,7 @@ nav a:hover::after {
 
 .profile-list li {
 
-    padding: .6rem 1rem;
+    padding: var(--space-xs) var(--space-sm);
 
     background: var(--color-white);
 
