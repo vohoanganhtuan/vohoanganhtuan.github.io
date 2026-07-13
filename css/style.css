@@ -629,11 +629,7 @@ nav a:hover::after {
 }
 
 .author-info {
-
-    width: 100%;
-
     text-align: center;
-
 }
 
 .author-info h2 {
