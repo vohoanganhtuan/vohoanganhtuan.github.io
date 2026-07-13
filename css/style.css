@@ -687,7 +687,7 @@ nav a:hover::after {
 
     box-shadow: var(--shadow-sm);
 
-    transition: var(--transition);
+    transition: var(--card-transition);
 
 }
 
