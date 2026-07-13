@@ -823,7 +823,16 @@ nav a:hover::after {
 
     nav .container{
 
-        gap: var(--space-sm);
+        gap:var(--space-sm);
+
+    }
+
+    .grid,
+    .grid-2,
+    .grid-3,
+    .grid-auto{
+
+        gap:var(--grid-gap-mobile);
 
     }
 
@@ -833,11 +842,13 @@ nav a:hover::after {
         grid-template-columns:1fr;
 
     }
-.author-intro .container{
 
-    padding: var(--space-xl);
+    .author-intro .container{
 
-}
+        padding:var(--space-xl);
+
+    }
+
 }
 /* ==========================================================
    17. FOOTER
