@@ -827,6 +827,13 @@ nav a:hover::after {
 
     }
 
+    .grid-2,
+    .grid-3{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
 /* ==========================================================
    17. FOOTER
