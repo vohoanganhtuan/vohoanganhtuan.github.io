@@ -640,15 +640,11 @@ nav a:hover::after {
 
     margin-bottom: var(--space-sm);
 
-    text-align: center;
-
 }
 
 .author-info p {
 
     margin-bottom: var(--space-sm);
-
-    text-align: center;
 
 }
 
