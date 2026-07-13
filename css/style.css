@@ -821,6 +821,12 @@ nav a:hover::after {
 
     }
 
+    nav .container{
+
+        gap: var(--space-sm);
+
+    }
+
 }
 /* ==========================================================
    17. FOOTER
