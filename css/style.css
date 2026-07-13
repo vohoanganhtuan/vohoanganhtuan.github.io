@@ -607,9 +607,9 @@ nav a:hover::after {
 }
 
 .author-photo {
-
+    display: flex;
+    justify-content: center;
     margin-bottom: var(--space-lg);
-
 }
 
 .author-photo img {
