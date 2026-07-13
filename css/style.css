@@ -833,7 +833,11 @@ nav a:hover::after {
         grid-template-columns:1fr;
 
     }
+.author-intro .container{
 
+    padding: var(--space-xl);
+
+}
 }
 /* ==========================================================
    17. FOOTER
